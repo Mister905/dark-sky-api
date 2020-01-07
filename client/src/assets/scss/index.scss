@@ -1,0 +1,135 @@
+@import "../../components/location_search/LocationSearch.scss";
+
+// The box-sizing property allows us to include the padding and border in an element's total width and height.
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: #396afc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2948ff,
+    #396afc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2948ff,
+    #396afc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-container {
+  max-width: 90%;
+  width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px black;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  background-color: #222;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.icon-container {
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  background-color: #fff;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.btn-search {
+  background-color: #2b4bff !important;
+}
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.status {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.detail-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.detail .title {
+  font-size: 2rem;
+  flex-grow: 1;
+  font-weight: bold;
+  color: #777;
+}
+
+.detail .value {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.custom-input-wrapper input:focus {
+  border-bottom: 1px solid #031467 !important;
+  box-shadow: 0 1px 0 0 #031467 !important;
+}
+
+.precip-type {
+  text-transform: capitalize;
+}
+
+.precip-prob {
+  margin-left: 5px;
+}
+
+.pac-item {
+  font-size: 1rem;
+  padding: 10px 10px;
+}
+
+.pac-icon {
+  display: none;
+}
+
+.pac-item-query {
+  font-size: 1rem;
+}
+
+.dark-sky-link {
+  display: block;
+  margin-bottom: 20px;
+}
